@@ -11,7 +11,7 @@ class EmailRule
     protected $client;
     protected $key;
     protected $log;
-    protected $url = 'https://api.mailgun.net/v3/address/private/validate';
+    protected $url = 'https://api.mailgun.net/v4/address/validate';
 
     public function __construct(Client $client, LoggerInterface $log, $key = '')
     {
